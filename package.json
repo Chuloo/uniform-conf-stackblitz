@@ -4,7 +4,7 @@
   "private": true,
   "license": "Apache-2.0",
   "scripts": {
-    "start": "npm run context:manifest && next start",
+    "start": "uniform context manifest download --output ./lib/context/manifest.json && next start",
     "dev": "run-s context:manifest dev:next",
     "dev:next": "next dev",
     "build": "run-s context:manifest build:next",
